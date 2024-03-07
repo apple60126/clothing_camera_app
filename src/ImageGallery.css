@@ -1,0 +1,142 @@
+.cards-container {
+    display: flex;
+    overflow-x: auto;
+    padding: 20px;
+    gap: 20px; /* This adds space between your cards */
+    margin-bottom: 60px;
+  }
+
+  .captured-image-card {
+    flex: 0 0 auto; /* Prevents cards from growing or shrinking */
+    width: 200px; /* Adjust based on your needs */
+    background: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    position: relative;
+    min-height: 208px;
+  
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+  }
+  
+  .captured-image-card img {
+    width: 100%; /* Makes image fill the card width */
+    display: block;
+  }
+  
+  .captured-image-card button.delete {
+    padding: 10px;
+    color: #333;
+    text-decoration: none;
+    width: "100%"; font-size: 16px;
+    padding: "10px"
+  }
+  .captured-image-card button.delete:active {
+    background-color: #d5d5d5;
+  }
+  .captured-image-card a {
+    visibility: hidden;
+  }
+  
+  .captured-image-card .download-instructions {
+    box-sizing: border-box;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    font-size: 16px;
+    position: absolute;
+    bottom: 0px;
+    color: white;
+    background-color: rgba(0,0,0,0.4);
+    pointer-events: none;
+  }
+  
+  .delete {
+    cursor: pointer;
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    width: 40px; /* Size of the circle */
+    height: 40px; /* Size of the circle */
+    background-color: white; /* Circle color */
+    border-radius: 50%; /* Makes the div a circle */
+    border: 10px solid transparent;
+  
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+  }
+  
+  .delete::before, .delete::after {
+    content: ''; /* Necessary for pseudo-elements */
+    position: absolute;
+    top: 8px; /* Adjust these values based on the size of your circle */
+    left: 0px;
+    height: 3px; /* Thickness of the "X" */
+    width: 22px; /* Length of the "X" */
+    background-color: red; /* Color of the "X" */
+  }
+  
+  .delete::before {
+    transform: rotate(45deg); /* Tilts the line to make one slash of the "X" */
+  }
+  
+  .delete::after {
+    transform: rotate(-45deg); /* Tilts the line to make the other slash of the "X" */
+  }
+  
+  .confirm-delete-modal {
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.6);
+  
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+  }
+  
+  .confirm-delete-modal-inner {
+    width: 80%;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    margin: 0 auto;
+    margin-top: 40px;
+  }
+
+  .modal {
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.9);
+  
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+  }
+  
+  .modal-content {
+    margin: auto;
+    display: block;
+    margin-top: 30px;
+    width: 80%;
+    max-width: 700px;
+  }
+  
+  .confirm-delete-button {
+    padding: 14px;
+    font-size: 22px;
+    margin-right: 8px;
+  }

@@ -1,0 +1,144 @@
+.capture-button-container {
+    display: flex;
+    justify-content: center;
+    height: 0;
+    position: relative;
+    bottom: 100px;
+  }
+  
+.capture-button {
+background-color: rgb(236, 236, 236);
+color: white;
+font-size: 16px;
+border-radius: 50%;
+height: 65px;
+width: 65px;
+border: none;
+cursor: pointer;
+display: flex;
+align-items: center;
+justify-content: center;
+
+-webkit-user-select: none; /* Safari */
+-ms-user-select: none; /* IE 10 and IE 11 */
+user-select: none; /* Standard syntax */
+}
+
+.capture-button .inner {
+background-color: transparent;
+color: white;
+font-size: 16px;
+border-radius: 50%;
+height: 55px; width: 55px;
+border: 1px solid black;
+cursor: pointer;
+}
+.capture-button:active .inner {
+background-color: rgb(189, 189, 189);
+}
+
+.x-level, .y-level {
+position: fixed;
+background-color: #333;
+
+-webkit-user-select: none; /* Safari */
+-ms-user-select: none; /* IE 10 and IE 11 */
+user-select: none; /* Standard syntax */
+}
+
+.x-level {
+left: 0;
+width: 100px;
+height: 100vh;
+}
+.y-level {
+top: 0;
+width: 100vw;
+height: 100px;
+}
+
+.camera-container {
+position: relative;
+}
+
+.jeans-outline {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%; 
+pointer-events: none;
+-webkit-user-select: none; /* Safari */
+-ms-user-select: none; /* IE 10 and IE 11 */
+user-select: none; /* Standard syntax */
+}
+.jeans-outline img {
+height: 75%;
+position: relative;
+top: 30px;
+}
+
+video {
+width: 80%;
+-webkit-user-select: none; /* Safari */
+-ms-user-select: none; /* IE 10 and IE 11 */
+user-select: none; /* Standard syntax */
+}
+
+.y-level-container {
+position: fixed;
+top: 0;
+left: 0;
+display: flex; /* Enable Flexbox */
+justify-content: center;
+/* padding-left: 30px; */
+width: 100%;
+height: 30px;
+transition: background-color 0.04s;
+}
+.y-level-bar {
+background-color: rgb(240,0,0);
+width: 100%;
+max-width: 100%;
+height: 30px;
+position: relative;
+margin-left: 30px;
+background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent */
+transition: background-color 0.04s;
+}
+.y-indicator {
+height: 30px;
+width: 10px;
+position: absolute;
+background-color: white; /* Initial color, will change via JS */
+border: 1px solid rgb(230,230,230);
+box-sizing: border-box;
+}
+
+.x-level-container {
+position: fixed;
+top: 0; left: 0;
+display: flex; /* Enable Flexbox */
+align-items: center;
+height: 100%;
+width: 30px;
+transition: background-color 0.04s;
+}
+.x-level-bar {
+background-color: rgb(240,0,0);
+height: 100%;
+max-height: 100%;
+margin-top: 20px;
+width: 30px;
+position: relative;
+background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent */
+transition: background-color 0.04s;
+}
+.x-indicator {
+height: 10px;
+width: 30px;
+position: absolute;
+background-color: white; /* Initial color, will change via JS */
+border: 1px solid rgb(230,230,230);
+box-sizing: border-box;
+}
