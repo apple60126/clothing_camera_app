@@ -9,7 +9,7 @@ Install ngrok. Ngrok is used so that you can view the app on your phone with a U
 
 Once it's installed, check it installed by opening a terminal and typing `ngrok --help`. It should say something.
 
-Download the repo to your computer, by opening a terminal and typing `git clone https://github.com/danieldmiller/level-jeans-photo-taker.git`
+Download the repo to your computer via git clone 
 
 # How to run the code
 
