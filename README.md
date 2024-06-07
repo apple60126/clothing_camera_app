@@ -1,4 +1,3 @@
-# Project Code 
 # Step-by-Step project code to develop a web app with accelerameter to consistently take quality pictures
 
 # How to install
