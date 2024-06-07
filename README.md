@@ -1,4 +1,4 @@
-# Step-by-Step project code to develop a web app with accelerameter to consistently take quality pictures
+# Developing a web app that uses an accelerometer to consistently take quality pictures 
 
 # How to install
 Install node on your computer. https://nodejs.org/en/download
