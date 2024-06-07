@@ -1,3 +1,4 @@
+# MVP to take quality pictures using a mobile friendly, web camera app with accelerameter 
 # How to install
 Install node on your computer. https://nodejs.org/en/download
 
