@@ -1,5 +1,7 @@
 # Developing a web app that uses an accelerometer to consistently take quality pictures 
 
+# Architecture
+
 # How to install
 Install node on your computer. https://nodejs.org/en/download
 
