@@ -1,6 +1,7 @@
 # Developing a web app that uses an accelerometer to consistently take quality pictures 
 
 # Architecture
+![Image](https://github.com/apple60126/clothing_camera_app/assets/45498246/f1366bb1-a19c-4920-8c08-d0193e78b9af)
 
 # How to install
 Install node on your computer. https://nodejs.org/en/download
