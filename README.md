@@ -1,4 +1,4 @@
-# Developing a web app (front end) that uses an accelerometer to consistently take quality pictures, and to match to shoppers who can wear it well (Perfect Match Algo)
+# Developing a web app (front end) that uses an accelerometer to consistently take quality pictures, and to match to shoppers who can wear it well (Recommendation System)
 
 # Architecture
 ![Image](https://github.com/apple60126/clothing_camera_app/assets/45498246/f1366bb1-a19c-4920-8c08-d0193e78b9af)
